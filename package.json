@@ -1,0 +1,34 @@
+{
+  "name": "rn-inspector-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "execs-all": "node index.js",
+    "execs-dependencies": "node  getModuleDependencies.js",
+    "execs-dev--dependencies": "node getModuleDevDependencies.js",
+    "execs-table--all": "node createTableAll.js",
+    "execs-table--deps": "node createTableDependencies.js",
+    "execs-table--devDependencies": "node createTableDevDependencies.js",
+    "execs-devs--cli-deps": "node displayDependenciesToCli.js",
+    "execs-devs--cli-devDependencies": "node displayDevDependenciesToCli.js"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arwys/react-native-mail-attachment.git"
+  },
+  "author": "arwysyah <arwysyahputrasiregar@gmail.com> (https://github.com/arwys)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arwys/react-native-mail-attachment/issues"
+  },
+  "homepage": "https://github.com/arwys/react-native-mail-attachment#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
