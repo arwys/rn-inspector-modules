@@ -1,6 +1,6 @@
 {
   "name": "rn-inspector-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,14 +20,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arwys/react-native-mail-attachment.git"
+    "url": "git+https://github.com/arwys/rn-inspector-modules.git"
   },
   "author": "arwysyah <arwysyahputrasiregar@gmail.com> (https://github.com/arwys)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arwys/react-native-mail-attachment/issues"
+    "url": "https://github.com/arwys/rn-inspector-modules/issues"
   },
-  "homepage": "https://github.com/arwys/react-native-mail-attachment#readme",
+  "homepage": "https://github.com/arwys/rn-inspector-modules#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
