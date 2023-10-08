@@ -8,7 +8,7 @@ not yet tested in Windows and Linux
 ### NPM
 
 ```
-npm i rn-inspector-modules
+npm i rn-inspector-modules --save-dev
 ```
 
 OR
@@ -17,7 +17,7 @@ OR
 
 ```
 
-yarn add rn-inspector-modules
+yarn add rn-inspector-modules --dev
 ```
 
 # CONFIGURATION
@@ -38,16 +38,33 @@ custom script cannot be named with the same name or method that availabe in the 
 `
 
 ```
+NPM
 "your_custom_script": "yarn --cwd node_modules/rn-inspector-modules run"
 
-such as below
+YARN
+"your_custom_script: "npm --prefix node_modules/rn-inspector-modules run "
 
+such as below :
+
+NPM
 "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "analyze": "yarn --cwd node_modules/rn-inspector-modules run"
+  }
+
+
+YARN
+"scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "analyze": "npm --prefix node_modules/rn-inspector-modules run"
   },
+
+
+
 ```
 
 2. After that you can combine your custom script with default script below
@@ -146,7 +163,7 @@ yarn  execs-devs--cli-deps
 Display devDependencies in another terminal by running this script. You can execute it using this command:
 
 ```bash
-npm execs-devs--cli-devDependencies
+yarn execs-devs--cli-devDependencies
 ```
 
 ## Contributing

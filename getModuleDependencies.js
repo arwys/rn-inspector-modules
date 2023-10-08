@@ -1,5 +1,5 @@
-const getCommand = require('../getCommand');
-const scanModule = require('../filterModule');
+const getCommand = require('./getCommand');
+const scanModule = require('./filterModule');
 
 async function getModuleDependencies() {
   const response = await scanModule('dependencies');
