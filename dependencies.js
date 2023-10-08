@@ -1,12 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 const getPackage = require('./getPackage');
+const { projectDirectory, node_modules_inside } = require('./config');
 
-const currentDirectory = process.cwd();
-const projectDirectory = path.join(currentDirectory, '..');
+
+
 
 function detectNodeModules() {
-  const nodeModulesPath = path.join(projectDirectory, 'node_modules');
+  const nodeModulesPath = node_modules_inside
 
   getPackage().then((response, error) => {
     if (error) {

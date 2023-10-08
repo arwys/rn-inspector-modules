@@ -3,8 +3,8 @@ const path = require('path');
 const getPackage = require('./getPackage');
 const formatSize = require('./formatSize');
 const getDirectorySize = require('./getDirectorySize');
+const { currentDirectory } = require('./config');
 
-const currentDirectory = process.cwd();
 
 const projectDirectory = path.resolve(
   currentDirectory,
