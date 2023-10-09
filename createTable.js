@@ -4,11 +4,10 @@ const Table = require('cli-table');
 const getPackage = require('./getPackage');
 const formatSize = require('./formatSize');
 const getDirectorySize = require('./getDirectorySize');
+const { projectDirectory } = require('./config');
 
 // Function to get the size of a directory (including subdirectories)
 
-const currentDirectory = process.cwd();
-const projectDirectory = path.join(currentDirectory, '..');
 
 // Path to your project's node_modules directory
 

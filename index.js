@@ -1,12 +1,13 @@
 const fs = require('fs');
 const path = require('path');
-const currentDirectory = process.cwd();
-const projectDirectory = path.join(currentDirectory, '..');
+const { projectDirectory, pkgJson } = require('./config');
+
+
 
 // Function to detect Node modules in the project directory
 function detectNodeModules() {
   const nodeModulesPath = projectDirectory
-  const pkgJson = path.join(projectDirectory, 'package.json');
+
   if (fs.existsSync(pkgJson)) {
     // You can read and work with the package.json file here
     const packageJsonContent = fs.readFileSync(pkgJson, 'utf8');
